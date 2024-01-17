@@ -90,17 +90,17 @@ jobs:
         rm -rf $1
         }
         (
-        git_clone https://github.com/zijieKwok/my-packages && mvdir my-packages
-        git_clone https://github.com/zijieKwok/openwrt-bypass && mvdir openwrt-bypass
-        git_clone https://github.com/zijieKwok/luci-app-dnsfilter
-        git_clone https://github.com/zijieKwok/aria2
-        git_clone https://github.com/zijieKwok/luci-app-baidupcs-web
-        git_clone https://github.com/zijieKwok/luci-theme-edge
-        git_clone https://github.com/zijieKwok/autoshare && mvdir autoshare
-        git_clone https://github.com/zijieKwok/luci-app-xlnetacc
-        git_clone https://github.com/zijieKwok/luci-app-wizard
-        git_clone https://github.com/zijieKwok/openwrt-adguardhome && mvdir openwrt-adguardhome
-        git_clone https://github.com/zijieKwok/luci-app-cloudreve
+        git_clone https://github.com/kiddin9/my-packages && mvdir my-packages
+        git_clone https://github.com/kiddin9/openwrt-bypass && mvdir openwrt-bypass
+        git_clone https://github.com/kiddin9/luci-app-dnsfilter
+        git_clone https://github.com/kiddin9/aria2
+        git_clone https://github.com/kiddin9/luci-app-baidupcs-web
+        git_clone https://github.com/kiddin9/luci-theme-edge
+        git_clone https://github.com/kiddin9/autoshare && mvdir autoshare
+        git_clone https://github.com/kiddin9/luci-app-xlnetacc
+        git_clone https://github.com/kiddin9/luci-app-wizard
+        git_clone https://github.com/kiddin9/openwrt-adguardhome && mvdir openwrt-adguardhome
+        git_clone https://github.com/kiddin9/luci-app-cloudreve
         ) &
         (
         git_clone https://github.com/pexcn/openwrt-chinadns-ng chinadns-ng
@@ -311,7 +311,7 @@ jobs:
 
 
     - name: SSH connection to Actions
-      uses: zijieKwok/debugger-action@master
+      uses: zijieKwok/debugger-action@main
       if: github.event.inputs.ssh == 'true'
 
     - name: Apply patches
